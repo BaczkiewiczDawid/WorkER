@@ -29,7 +29,7 @@ sectionTl.fromTo(".section__images", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}
 sectionTl.fromTo(".section__paragraph", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, .5)
 
 let sectionScene = new ScrollMagic.Scene({
-    triggerElement: ".section__title",
+    triggerElement: ".header__buttons",
 })
 
 .setTween(sectionTl).addTo(controller);

@@ -25,25 +25,10 @@ const sectionTl = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 
 sectionTl.fromTo(".section__title", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, 0)
-sectionTl.fromTo(".section__images", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, .3)
-sectionTl.fromTo(".section__paragraph", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, .5)
+sectionTl.fromTo(".section__imgaes", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, 0)
 
-let sectionScene = new ScrollMagic.Scene({
+let scene = new ScrollMagic.Scene({
     triggerElement: ".section__title",
 })
 
 .setTween(sectionTl).addTo(controller);
-
-const articleTl = new TimelineMax();
-const articleController = new ScrollMagic.Controller();
-
-articleTl.fromTo(".article__title", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1})
-articleTl.fromTo(".article__paragraph-one", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, .5)
-articleTl.fromTo(".article__paragraph-two", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, .7)
-articleTl.fromTo(".article__image", 1, {x: 50, opacity: 0}, {x: 0, opacity: 1}, 1)
-
-let articleScene = new ScrollMagic.Scene({
-    triggerElement: ".section__paragraph",
-})
-
-.setTween(articleTl).addTo(articleController);

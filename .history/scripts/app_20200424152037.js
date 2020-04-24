@@ -40,7 +40,7 @@ const articleController = new ScrollMagic.Controller();
 articleTl.fromTo(".article__title", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1})
 articleTl.fromTo(".article__paragraph-one", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, .5)
 articleTl.fromTo(".article__paragraph-two", 1, {y: 100, opacity: 0}, {y: 0, opacity: 1}, .7)
-articleTl.fromTo(".article__image", 1, {x: 50, opacity: 0}, {x: 0, opacity: 1}, 1)
+articleTl.fromTo(".article__image", 1, {x: 50, opacity: 0}, {x: 0, opacity: 1}, )
 
 let articleScene = new ScrollMagic.Scene({
     triggerElement: ".section__paragraph",

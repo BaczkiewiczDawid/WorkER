@@ -15,6 +15,7 @@ nav .navigation__logo {
   font-size: 24px;
   display: inline-block;
   color: #2a2a2a;
+  cursor: pointer;
 }
 
 nav .navigation__logo::after {
@@ -56,6 +57,8 @@ nav .hamburger .hamburger__box .hamburger__inner {
   transition: .25s;
   border-radius: 50px;
   background-color: #2a2a2a;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
 }
 
 nav .hamburger .hamburger__box .hamburger__inner::before, nav .hamburger .hamburger__box .hamburger__inner::after {
@@ -164,7 +167,6 @@ header .header__title {
   margin-top: 5vh;
   color: #2a2a2a;
   font-size: 32px;
-  cursor: pointer;
 }
 
 header .header__card {
@@ -214,8 +216,8 @@ header .header__buttons .header__contact {
 header .header__buttons .header__contact:hover {
   background: #4FFF7D;
   color: #fafafa;
-  -webkit-transition: .25s;
-  transition: .25s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 header .header__buttons .header__read-more {
@@ -226,6 +228,12 @@ header .header__buttons .header__read-more {
   margin-left: 20px;
   color: #2a2a2a;
   cursor: pointer;
+}
+
+header .header__buttons .header__read-more:hover {
+  color: #4FFF7D;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 section .section__title {
