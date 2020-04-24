@@ -1,0 +1,86 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    background-color: $primary-color;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    .navigation__logo {
+        padding: 1rem;
+        font-size: 24px;
+        display: inline-block;
+    }
+    .navigation__logo::after {
+        content: 'ER';
+        color: $secoundary-color;
+    }
+    .hamburger {
+        border: none;
+        display: flex;
+        background-color: transparent;
+        float: right;
+        cursor: pointer;
+        padding: 10px;
+        margin: 0;
+        .hamburger__box {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            display: flex;
+            transition: .25s;
+            z-index: 2;
+            .hamburger__inner {
+                @include hamburger-line;
+                background-color: $text-color;
+            }
+            .hamburger__inner::before, .hamburger__inner::after {
+                @include hamburger-line;
+                content: '';
+                background-color: $text-color;
+            }
+            .hamburger__inner::before {
+                top: -10px;
+            }
+            .hamburger__inner::after {
+                top: 10px;
+            }
+            .hamburger--active {
+                background-color: $primary-color;
+            }
+        }
+        .navigation {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            left: 0;
+            background-color: $text-color;
+            z-index: 1;
+            transform: translateX(-100vw);
+            transition: .5s;
+            .navigation__list {
+                margin-top: 50px;
+                list-style-type: none;
+                .navigation__item {
+                    margin-bottom: 20px;
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .navigation--active {
+            transform: translateX(0);
+            transition: .5s ease-in-out;
+        }
+    }
+}

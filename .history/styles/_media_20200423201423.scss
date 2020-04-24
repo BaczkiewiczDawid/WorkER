@@ -1,0 +1,20 @@
+@media (min-width: 425px) {
+    nav {
+        .nav__logo {
+            font-size: 32px;
+        }
+    }
+    header {
+        .header__title {
+            font-size: 36px;
+        }
+    }
+    section {
+        .section__title {
+            font-size: 36px;
+        }
+        .section__images {
+            margin-top: 5vh;
+        }
+    }
+}

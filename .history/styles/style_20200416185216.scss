@@ -1,0 +1,14 @@
+*, *::before, *::after  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Open sans', sans-serif;
+}
+nav {
+    .nav__logo {
+        color: #2a2a2a;
+        padding: 1rem;
+    }
+}

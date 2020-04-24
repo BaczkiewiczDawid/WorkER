@@ -1,0 +1,54 @@
+*, *::before, *::after  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Open sans', sans-serif;
+}
+nav {
+    .nav__logo {
+        color: #2a2a2a;
+        padding: 1rem;
+    }
+    .nav__hamburger {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+        user-select: none;
+        .nav__span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: #2a2a2a;
+            border-radius: 3px;
+            z-index: 1;
+        }
+        .nav__input {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+        }
+        ul {
+            a {
+                text-decoration: none;
+                visibility: hidden;
+                color: #fafafa;
+                transition: .25s ease;
+            }
+            a:hover {
+                visibility: visible;
+            }
+        }
+    }
+}
