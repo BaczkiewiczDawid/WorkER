@@ -234,7 +234,7 @@ section .section__title {
   width: 90vw;
   text-align: center;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 section .section__images {
@@ -254,7 +254,7 @@ section .section__images {
   margin-top: 5vh;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: auto;
+  margin: 5vh auto;
   width: 90vw;
 }
 
@@ -299,14 +299,14 @@ article .article__title {
   font-size: 32px;
   margin: auto;
   text-align: center;
-  margin-top: 12vh;
+  margin-top: 10vh;
 }
 
 article .article__paragraph-one {
   color: #2a2a2a;
   width: 90%;
   margin: auto;
-  margin-top: 8vh;
+  margin-top: 5vh;
   letter-spacing: 1%;
   line-height: 25px;
 }
@@ -319,7 +319,7 @@ article .article__container {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  margin-top: 30vh;
+  margin-top: 5vh;
 }
 
 article .article__container .article__image {
@@ -556,7 +556,7 @@ article .article__paragraph-two {
   header .header__paragraph {
     margin-left: 40rem;
     font-size: 22px;
-    margin-top: -40vh;
+    margin-top: -50vh;
     line-height: 40px;
   }
   header .header__buttons {

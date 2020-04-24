@@ -180,7 +180,7 @@ section {
         align-items: center;
         margin-top: 5vh;
         flex-wrap: wrap;
-        margin: 5vh auto;
+        margin: auto;
         width: 90vw;
         .section__brand {
             width: 20vw;
@@ -212,7 +212,7 @@ article {
         font-size: 32px;
         margin: auto;
         text-align: center;
-        margin-top: 10vh;
+        margin-top: 12vh;
     }
     .article__paragraph-one {
         color: $text-color;

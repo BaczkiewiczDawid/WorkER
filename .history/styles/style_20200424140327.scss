@@ -171,7 +171,7 @@ section {
         width: 90vw;
         text-align: center;
         margin: auto;
-        margin-top: 5vh;
+        margin-top: 10vh;
     }
     .section__images {
         display: flex;
@@ -180,7 +180,7 @@ section {
         align-items: center;
         margin-top: 5vh;
         flex-wrap: wrap;
-        margin: 5vh auto;
+        margin: auto;
         width: 90vw;
         .section__brand {
             width: 20vw;
@@ -212,13 +212,13 @@ article {
         font-size: 32px;
         margin: auto;
         text-align: center;
-        margin-top: 10vh;
+        margin-top: 12vh;
     }
     .article__paragraph-one {
         color: $text-color;
         width: 90%;
         margin: auto;
-        margin-top: 5vh;
+        margin-top: 8vh;
         letter-spacing: 1%;
         line-height: 25px;
     }
@@ -226,7 +226,7 @@ article {
         justify-content: center;
         align-items: center;
         margin: auto;
-        margin-top: 5vh;
+        margin-top: 30vh;
         .article__image {
             width: 70vw;
             height: auto;
